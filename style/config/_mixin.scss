@@ -1,0 +1,16 @@
+@mixin font-height($font, $line-height) {
+  font-size: $font;
+  line-height: $line-height;
+}
+
+@mixin pad {
+  @media all and (max-width: $pad-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media all and (max-width: $mobile-width) {
+    @content;
+  }
+}
