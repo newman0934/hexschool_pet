@@ -94,7 +94,7 @@
   display: flex; // 1. allow flex styles
   align-items: center; // 2. vertically center contents
   justify-content: center; // 3. horizontally center contents
-  width: $carousel-control-width;
+  width: 5%;
   color: $carousel-control-color;
   text-align: center;
   opacity: $carousel-control-opacity;
@@ -127,13 +127,18 @@
   display: inline-block;
   width: $carousel-control-icon-width;
   height: $carousel-control-icon-width;
-  background: no-repeat 50% / 100% 100%;
+  background: $primary no-repeat 50% / 50% 50%;
+  border-radius: 50%;
+  position: absolute;
+
 }
 .carousel-control-prev-icon {
   background-image: escape-svg($carousel-control-prev-icon-bg);
+  
 }
 .carousel-control-next-icon {
   background-image: escape-svg($carousel-control-next-icon-bg);
+  right: -50%;
 }
 
 

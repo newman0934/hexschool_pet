@@ -7345,7 +7345,7 @@ a.close.disabled {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15%;
+  width: 5%;
   color: #fff;
   text-align: center;
   opacity: 0.5;
@@ -7381,9 +7381,11 @@ a.close.disabled {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: no-repeat 50% / 100% 100%;
+  width: 44px;
+  height: 44px;
+  background: #772400 no-repeat 50%/50% 50%;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .carousel-control-prev-icon {
@@ -7392,6 +7394,7 @@ a.close.disabled {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+  right: -50%;
 }
 
 .carousel-indicators {
@@ -14682,5 +14685,19 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
 .rating .rating-amount span {
   font-size: 0.875rem;
   line-height: 21px;
+}
+
+.appointment {
+  display: inline-block;
+  font-size: 12px;
+  border: 1px dotted #4F4F4F;
+  padding: 10px;
+  margin: 5px 5px 5px 0;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.5em;
+  letter-spacing: 1pt;
+  color: #353535;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=all.css.map */
