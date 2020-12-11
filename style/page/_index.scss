@@ -1,0 +1,29 @@
+.card{
+  box-shadow: 0px 3px 6px #00000029;
+  .card-img-top{
+    object-fit: cover;
+    height: 7.5rem;
+  }
+  .card-photo{
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%); 
+  }
+  .card-title{
+    @include font-height($font-size-3,$line-height-md);
+  }
+  .card-link{
+    width: 45.71%;
+  }
+}
+.rating{
+  margin: 0 1.875rem;
+  .rating-amount{
+    @include font-height($font-size-5,$line-height-xl);
+    span{
+      font-size: 0.875rem;
+      line-height: 21px;
+    }
+  }
+}
+
