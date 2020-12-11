@@ -10,8 +10,9 @@
 </head>
 
 <body>
+	<!-- header -->
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container px-0">
+		<div class="container">
 			<h1 class="logo">
 				<a href="./index.html">PETPET</a>
 			</h1>
@@ -34,15 +35,16 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container px-0 text-primary">
+	<!-- 熱門保姆 -->
+	<div class="container text-primary mb-lg-21">
 		<h3 class="mb-1 font-weight-bold">本月熱門保姆</h3>
 		<p class="mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
-		<div id="hot-sitter" class="carousel slide" data-ride="carousel">
+		<div id="hot-sitter-carousel" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col-md-4">
-							<div class="card text-center p-1 border-0">
+							<div class="hot-sitter card text-center p-1 border-0">
 								<img class="card-img-top" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-2.jpeg" alt="Card image cap">
 								<div class="card-body position-relative">
 									<img class="w-33 card-photo mx-auto position-absolute" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-1.png" alt="person pic">
@@ -63,7 +65,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card text-center p-1 border-0">
+							<div class="hot-sitter card text-center p-1 border-0">
 								<img class="card-img-top" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-3.jpeg" alt="Card image cap">
 								<div class="card-body position-relative">
 									<img class="w-33 card-photo mx-auto position-absolute" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-2.png" alt="person pic">
@@ -84,7 +86,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card text-center p-1 border-0">
+							<div class="hot-sitter card text-center p-1 border-0">
 								<img class="card-img-top" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-4.jpeg" alt="Card image cap">
 								<div class="card-body position-relative">
 									<img class="w-33 card-photo mx-auto position-absolute" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-3.png" alt="person pic">
@@ -107,28 +109,46 @@
 					</div>
 				</div>
 			</div>
-			<!-- <a class="carousel-control-prev" href="#hot-sitter" role="button" data-slide="prev">
+			<!-- <a class="carousel-control-prev" href="#hot-sitter-carousel" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a> -->
-			<a class="carousel-control-next" href="#hot-sitter" role="button" data-slide="next">
+			<a class="carousel-control-next" href="#hot-sitter-carousel" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
 	</div>
-
-	<div class="container px-0 text-primary">
+	<!-- 線上預約 -->
+	<div class="container text-primary">
 		<h3 class="mb-1 font-weight-bold">線上預約</h3>
 		<p class="mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
-		<div class="appointment">
-			<div class="appointment-item">
-				<img src="" alt="">
-			</div>
-			<div class="appointment-item"></div>
-			<div class="appointment-item"></div>
-			<div class="appointment-item"></div>
-			<div class="appointment-item"></div>
+		<div class="waterfall d-flex flex-column flex-wrap align-content-between">
+			<a href="./service" class="waterfall-link position-relative">
+				<img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-5.jpeg" alt="線上預約圖片">
+				<div class="mask position-absolute"></div>
+				<span class="waterfall-text text-white position-absolute font-weight-bold">寵物寄宿</span>
+			</a>
+			<a href="./service" class="waterfall-link position-relative">
+				<img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-6.jpeg" alt="線上預約圖片">
+				<div class="mask position-absolute"></div>
+				<span class="waterfall-text text-white position-absolute font-weight-bold">寵物美容</span>
+			</a>
+			<a href="./service" class="waterfall-link position-relative">
+				<img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-7.jpeg" alt="線上預約圖片">
+				<div class="mask position-absolute"></div>
+				<span class="waterfall-text text-white position-absolute font-weight-bold">到府照顧</span>
+			</a>
+			<a href="./service" class="waterfall-link position-relative">
+				<img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-8.jpeg" alt="線上預約圖片">
+				<div class="mask position-absolute"></div>
+				<span class="waterfall-text text-white position-absolute font-weight-bold">溜狗保姆</span>
+			</a>
+			<a href="./service" class="waterfall-link position-relative">
+				<img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-3.jpeg" alt="線上預約圖片">
+				<div class="mask position-absolute"></div>
+				<span class="waterfall-text text-nowrap text-white position-absolute font-weight-bold">行為訓練</span>
+			</a>
 		</div>
 	</div>
 	<footer class="container d-flex justify-content-between px-0">

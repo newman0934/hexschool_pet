@@ -1,4 +1,4 @@
-.card{
+.hot-sitter.card{
   box-shadow: 0px 3px 6px #00000029;
   .card-img-top{
     object-fit: cover;
@@ -26,20 +26,47 @@
     }
   }
 }
+.waterfall{
+  max-height: 21.875rem;
+  &-link:nth-child(1){
+    width: 30.70%;
+    height: 21.875rem;
+  }
+  &-link:nth-child(2){
+    width: 26.57%;
+    height: 21.875rem;
+  }
+  &-link:nth-child(3){
+    margin-bottom: 6px;
+  }
+  &-link:nth-child(3), &-link:nth-child(4){
+    width: 23.42%;
+    height: 10.75rem;
+  }
+  &-link:nth-child(5){
+    width: 15.08%;
+    height: 21.875rem;
+  }
+  img{
+    object-fit: cover;
+    height: 100%;
+  }
+  .mask{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    &:hover{
+      background: none;
+    }
+  }
+  &-text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include font-height($font-size-4,$line-height-lg)
+  }
 
-.appointment{
-  display: inline-block;
-  font-size:12px;
-  border: 1px dotted #4F4F4F;
-  padding: 10px;
-  margin: 5px 5px 5px 0;
-  overflow:hidden;
-  font-size:15px;
-  line-height: 1.5em;
-  letter-spacing: 1pt;
-  color:#353535;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   
 }
