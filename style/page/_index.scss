@@ -70,3 +70,20 @@
 
   
 }
+.my-service{
+  height: 36.5rem;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-9.jpeg") center;
+  background-size: cover;
+  padding-top: 5rem;
+  h2{
+    margin-bottom: 6.25rem;
+    @include font-height($font-size-8,$line-height-xxxl);
+  }
+  h3{
+    @include font-height($font-size-9,$line-height-xxxxl);
+  }
+  p{
+    @include font-height($font-size-3,$line-height-md);
+    padding-bottom: 6.875rem;
+  }
+}

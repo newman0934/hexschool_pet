@@ -15941,4 +15941,28 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
   font-size: 1.5rem;
   line-height: 36px;
 }
+
+.my-service {
+  height: 36.5rem;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-9.jpeg") center;
+  background-size: cover;
+  padding-top: 5rem;
+}
+
+.my-service h2 {
+  margin-bottom: 6.25rem;
+  font-size: 2.5rem;
+  line-height: 60px;
+}
+
+.my-service h3 {
+  font-size: 3rem;
+  line-height: 72px;
+}
+
+.my-service p {
+  font-size: 1.25rem;
+  line-height: 30px;
+  padding-bottom: 6.875rem;
+}
 /*# sourceMappingURL=all.css.map */
