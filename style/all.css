@@ -15891,28 +15891,32 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
   max-height: 21.875rem;
 }
 
-.waterfall-link:nth-child(1) {
+.waterfall-item:nth-child(1) {
   width: 30.70%;
   height: 21.875rem;
 }
 
-.waterfall-link:nth-child(2) {
+.waterfall-item:nth-child(2) {
   width: 26.57%;
   height: 21.875rem;
 }
 
-.waterfall-link:nth-child(3) {
+.waterfall-item:nth-child(3) {
   margin-bottom: 6px;
 }
 
-.waterfall-link:nth-child(3), .waterfall-link:nth-child(4) {
+.waterfall-item:nth-child(3), .waterfall-item:nth-child(4) {
   width: 23.42%;
   height: 10.75rem;
 }
 
-.waterfall-link:nth-child(5) {
+.waterfall-item:nth-child(5) {
   width: 15.08%;
   height: 21.875rem;
+}
+
+.waterfall-link {
+  height: 100%;
 }
 
 .waterfall img {
@@ -15964,5 +15968,40 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
   font-size: 1.25rem;
   line-height: 30px;
   padding-bottom: 6.875rem;
+}
+
+.help h2 {
+  font-size: 2.5rem;
+  line-height: 60px;
+}
+
+.help p {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.help input[type="email"] {
+  width: 70%;
+}
+
+.help button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 30%;
+}
+
+.process-title {
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+.process-desc, .process-item-title {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.site-map h3 {
+  font-size: 1.25rem;
+  line-height: 30px;
 }
 /*# sourceMappingURL=all.css.map */
