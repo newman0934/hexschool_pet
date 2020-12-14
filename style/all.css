@@ -15934,21 +15934,41 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
 }
 
 .waterfall {
-  max-height: 21.875rem;
+  height: 21.875rem;
+}
+
+@media all and (max-width: 992px) {
+  .waterfall {
+    height: 13.125rem;
+  }
+}
+
+.waterfall-item {
+  height: 21.875rem;
+}
+
+@media all and (max-width: 992px) {
+  .waterfall-item {
+    height: 13.125rem;
+  }
 }
 
 .waterfall-item:nth-child(1) {
   width: 30.70%;
-  height: 21.875rem;
 }
 
 .waterfall-item:nth-child(2) {
   width: 26.57%;
-  height: 21.875rem;
 }
 
 .waterfall-item:nth-child(3) {
   margin-bottom: 6px;
+}
+
+@media all and (max-width: 992px) {
+  .waterfall-item:nth-child(3) {
+    margin-bottom: 4px;
+  }
 }
 
 .waterfall-item:nth-child(3), .waterfall-item:nth-child(4) {
@@ -15956,9 +15976,14 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
   height: 10.75rem;
 }
 
+@media all and (max-width: 992px) {
+  .waterfall-item:nth-child(3), .waterfall-item:nth-child(4) {
+    height: 6.4375rem;
+  }
+}
+
 .waterfall-item:nth-child(5) {
   width: 15.08%;
-  height: 21.875rem;
 }
 
 .waterfall-link {
