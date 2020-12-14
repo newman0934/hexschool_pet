@@ -14,7 +14,6 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-
 .variety, .service, .dist{
   border-color: $gray-400;
   color: $gray-600;
@@ -29,13 +28,13 @@
   top: 11.875rem;
   left:36.875rem;
 }
-
 .banner-dropdown-button span{
   font-size: 2.5rem;
   padding-top: 0.25rem;
-
 }
-
+.sub-title{
+  line-height: $line-height-lg;
+}
 .hot-sitter.card{
   box-shadow: 0px 3px 6px #00000029;
   .card-img-top{
@@ -72,23 +71,36 @@
   @include pad{
     height: 13.125rem;
   }
+  @include mobile{
+    height: auto;
+  }
   &-item{
     height: 21.875rem;
     @include pad{
       height: 13.125rem;
     }
+    @include mobile{
+      height: 8.25rem;
+      margin-bottom: 0.25rem;
+    }
   }
   &-item:nth-child(1){
-    width: 30.70%;   
+    width: 30.70%;
+    @include mobile{
+      width: 100%;
+    }   
   }
   &-item:nth-child(2){
     width: 26.57%;
+    @include mobile{
+      width: 100%;
+    }
   }
   &-item:nth-child(3){
     margin-bottom: 6px;
     @include pad{
       margin-bottom: 4px;
-    }
+    }   
   }
   &-item:nth-child(3), &-item:nth-child(4){
     width: 23.42%;
@@ -96,9 +108,16 @@
     @include pad{
       height: 6.4375rem;
     }
+    @include mobile{
+      width: 100%;
+      height: 8.25rem;
+    }
   }
   &-item:nth-child(5){
     width: 15.08%;
+    @include mobile{
+      width: 100%;
+    }
   }
   &-link{
     height: 100%;
@@ -129,9 +148,15 @@
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-9.jpeg") center;
   background-size: cover;
   padding-top: 5rem;
+  @include mobile{
+    height: 50.75rem;
+  }
   h2{
     margin-bottom: 6.25rem;
     @include font-height($font-size-8,$line-height-xxxl);
+    @include mobile{
+      margin-bottom: 3rem;
+    }
   }
   h3{
     @include font-height($font-size-9,$line-height-xxxxl);
@@ -139,22 +164,33 @@
   p{
     @include font-height($font-size-3,$line-height-md);
     padding-bottom: 6.875rem;
+    @include mobile{
+      padding-bottom: 1rem;
+    }
   }
 }
 .help{
   h2{
-    @include font-height($font-size-8,$line-height-xxxl)
+    @include font-height($font-size-8,$line-height-xxxl);
+    @include font-height($font-size-4,$line-height-lg)
   }
   p{
-    @include font-height($font-size-3,$line-height-md)
+    @include font-height($font-size-3,$line-height-md);
+    @include font-height($font-size-2,24px)
   }
   input[type="email"]{
     width: 70%;
+    @include mobile{
+      width: 50%;
+    }
   }
   button{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     width: 30%;
+    @include mobile{
+      width: 50%;
+    }
   }
 }
 .process{
