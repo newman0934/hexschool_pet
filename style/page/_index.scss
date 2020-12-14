@@ -56,6 +56,9 @@
 }
 .rating{
   margin: 0 1.875rem;
+  @include pad{
+    margin: 0 1rem;
+  }
   .rating-amount{
     @include font-height($font-size-5,$line-height-xl);
     span{

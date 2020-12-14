@@ -15917,6 +15917,12 @@ a.text-gray-medium:hover, a.text-gray-medium:focus {
   margin: 0 1.875rem;
 }
 
+@media all and (max-width: 992px) {
+  .rating {
+    margin: 0 1rem;
+  }
+}
+
 .rating .rating-amount {
   font-size: 1.75rem;
   line-height: 42px;
