@@ -1,3 +1,41 @@
+.variety{
+  max-width: 7.5rem;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.service, .dist{
+  max-width: 13.125rem;
+  width: 100%;
+}
+.search-button{
+  max-width:5.9375rem;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.variety, .service, .dist{
+  border-color: $gray-400;
+  color: $gray-600;
+}
+.banner-dropdown-button{
+  width: 2.75rem;
+  height: 2.75rem;
+  color: #fff;
+  background: $primary;
+  border-radius: 50%;
+  text-align: center;
+  top: 11.875rem;
+  left:36.875rem;
+}
+
+.banner-dropdown-button span{
+  font-size: 2.5rem;
+  padding-top: 0.25rem;
+
+}
+
 .hot-sitter.card{
   box-shadow: 0px 3px 6px #00000029;
   .card-img-top{
