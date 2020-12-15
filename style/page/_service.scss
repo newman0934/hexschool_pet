@@ -1,0 +1,24 @@
+.banner-title{
+    @include font-height($font-size-5,$line-height-xxxl);
+}
+
+.banner-subtitle{
+    @include font-height($font-size-3,$line-height-lg);
+}
+
+.store-title{
+    @include font-height($font-size-2,1.5rem);
+}
+
+.store-img{
+    max-height: 8rem;
+    object-fit: cover;
+}
+
+.store-text{
+    @include font-height(0.875rem, 21px)
+}
+
+.store-link:hover{
+    background: $gray-200;
+}

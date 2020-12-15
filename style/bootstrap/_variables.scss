@@ -6,8 +6,8 @@
 // Color system
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
+$gray-100: #fafafa !default;
+$gray-200: #f0f0f0 !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
@@ -58,8 +58,15 @@ $colors: map-merge(
     "teal":       $teal,
     "cyan":       $cyan,
     "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-100":   $gray-100,
+    "gray-200":   $gray-200,
+    "gray-300":   $gray-300,
+    "gray-400":   $gray-400,
+    "gray-500":   $gray-500,
+    "gray-600":   $gray-600,
+    "gray-700":   $gray-700,
+    "gray-800":   $gray-800,
+    "gray-900":   $gray-900,
   ),
   $colors
 );
@@ -87,9 +94,15 @@ $theme-colors: map-merge(
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark,
-    "gray-dark":  $gray-dark,
-    "gray-light": $gray-light,
-    "gray-medium":$gray-medium     
+    "gray-100":   $gray-100,
+    "gray-200":   $gray-200,
+    "gray-300":   $gray-300,
+    "gray-400":   $gray-400,
+    "gray-500":   $gray-500,
+    "gray-600":   $gray-600,
+    "gray-700":   $gray-700,
+    "gray-800":   $gray-800,
+    "gray-900":   $gray-900,   
   ),
   $theme-colors
 );
