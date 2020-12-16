@@ -17143,6 +17143,13 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   line-height: 60px;
 }
 
+@media all and (max-width: 767px) {
+  .banner-title {
+    font-size: 1.75rem;
+    line-height: 42px;
+  }
+}
+
 .banner-subtitle {
   font-size: 1.25rem;
   line-height: 36px;
@@ -17154,7 +17161,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 }
 
 .store-img {
-  max-height: 8rem;
+  height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
 }

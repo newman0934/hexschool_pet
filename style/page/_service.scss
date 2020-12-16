@@ -1,5 +1,8 @@
 .banner-title{
     @include font-height($font-size-5,$line-height-xxxl);
+    @include mobile{
+        @include font-height($font-size-5,$line-height-xl)
+    }
 }
 
 .banner-subtitle{
@@ -11,7 +14,7 @@
 }
 
 .store-img{
-    max-height: 8rem;
+    height: 8rem;
     object-fit: cover;
 }
 
