@@ -16828,6 +16828,14 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   background: #772400;
 }
 
+.btn-weight-md {
+  width: 10rem;
+}
+
+.btn-weight-lg {
+  width: 15.9375rem;
+}
+
 .logo {
   width: 121px;
   height: 55px;
@@ -17175,8 +17183,65 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   background: #f0f0f0;
 }
 
+.comment img {
+  width: 3.75rem;
+}
+
+.comment h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.comment span {
+  font-size: 14px;
+  line-height: 19px;
+  color: #887676;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .card {
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
+}
+
+.big-img {
+  height: 27.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media all and (max-width: 992px) {
+  .big-img {
+    height: 13.75rem;
+  }
+}
+
+.small-img {
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media all and (max-width: 992px) {
+  .small-img {
+    width: 3.9375rem;
+    height: 3.9375rem;
+  }
+}
+
+.small-img + .small-img {
+  margin-left: 0.5rem;
+}
+
+@media all and (max-width: 992px) {
+  .small-img + .small-img {
+    margin-left: 6px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

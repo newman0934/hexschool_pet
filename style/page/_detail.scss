@@ -1,0 +1,17 @@
+.comment{
+  img{
+    width: 3.75rem;
+  }
+  h5{
+    @include font-height();
+  }
+  span{
+    @include font-height(14px, 19px);
+    color: $gray-850;
+  }
+}
+
+.sticky-top{
+  position: sticky;
+  top: 0;
+}

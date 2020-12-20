@@ -1,0 +1,24 @@
+.big-img{
+  height: 27.5rem;
+  object-fit: cover;
+  @include pad{
+    height: 13.75rem;
+  }
+}
+
+.small-img{
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  @include pad{
+    width: 3.9375rem;
+    height: 3.9375rem;
+  }
+}
+
+.small-img + .small-img{
+  margin-left: 0.5rem;
+  @include pad{
+    margin-left: 6px;
+  }
+}
