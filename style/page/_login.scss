@@ -1,0 +1,12 @@
+.login{
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-1.png") no-repeat;
+    .forget-password{
+        @include font-height(14px, 21px)
+    }
+    .socialMedia-link{
+        width: 49.29%;
+    }
+    button[type="submit"]{
+        width: 255px;
+    }
+}
