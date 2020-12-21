@@ -17206,6 +17206,13 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
 .login {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-1.png") no-repeat;
+  height: calc(100vh - 55px);
+}
+
+@media all and (max-width: 992px) {
+  .login {
+    background: none;
+  }
 }
 
 .login .forget-password {
@@ -17217,8 +17224,20 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   width: 49.29%;
 }
 
+@media all and (max-width: 992px) {
+  .login .socialMedia-link {
+    width: 100%;
+  }
+}
+
 .login button[type="submit"] {
-  width: 255px;
+  width: 40.15%;
+}
+
+@media all and (max-width: 992px) {
+  .login button[type="submit"] {
+    width: 100%;
+  }
 }
 
 .card {
