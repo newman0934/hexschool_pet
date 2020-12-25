@@ -17240,6 +17240,52 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   }
 }
 
+.member {
+  height: calc(100vh - 71px);
+}
+
+@media all and (max-width: 767px) {
+  .member {
+    height: 100%;
+  }
+}
+
+.member-photo {
+  max-width: 95px;
+}
+
+.member-title {
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+.member-name {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.member-desc {
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+@media all and (max-width: 992px) {
+  .member-desc {
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+}
+
+.member-link {
+  width: 47%;
+}
+
+@media all and (max-width: 992px) {
+  .member-link {
+    width: 100%;
+  }
+}
+
 .card {
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;

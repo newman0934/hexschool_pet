@@ -1,0 +1,28 @@
+.member{
+  height: calc(100vh - 71px);
+  @include mobile{
+    height: 100%;
+  }
+  &-photo{
+    max-width: 95px;
+  }
+  &-title{
+    @include font-height($font-size-6,$line-height-xxl);
+  }
+  &-name{
+    @include font-height($font-size-3,$line-height-md)
+  }
+  &-desc{
+    @include font-height($font-size-6,$line-height-xxl);
+    @include pad{
+      @include font-height($font-size-4, $line-height-lg);
+    }
+  }
+  &-link{
+    width: 47%;
+    @include pad{
+      width: 100%;
+    }
+  }
+}
+
