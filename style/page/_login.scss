@@ -9,6 +9,9 @@
     }
     .socialMedia-link{
         width: 49.29%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include pad{
             width: 100%;
         }
@@ -18,5 +21,19 @@
         @include pad{
             width: 100%;
         }
+    }
+    .facebook:before{
+        content:"";
+        display: inline-block;
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/facebook.svg");
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .google:before{
+        content:"";
+        display: inline-block;
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/google.svg");
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

@@ -4,6 +4,9 @@
     background: none;
     height: calc(100vh - 70px);
   }
+  @include mobile{
+    height: auto;
+  }
 }
 
 .index-banner{
@@ -11,45 +14,47 @@
     max-width: 13.125rem;
     @include invisible(visible);
   }
+  @include mobile{
+    max-width:100%;
+  }
 }
 
-.index-banner-md{
+.index-banner-form{
+  width: 100%;
   @include pad{
     width:390px;
   }
 }
 
 .variety{
-  max-width: 7.5rem;
-  width: 100%;
+  width: 18.89%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .service, .dist{
-  max-width: 13.125rem;
-  width: 100%;
+  width: 33.07%;
 }
 .search-button{
-  max-width:5.9375rem;
-  width: 100%;
+  width: 14.96%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   @include pad{
-    max-width: 100%;
+    width: 100%;
   }
 }
 .variety, .service, .dist{
   border-color: $gray-400;
   color: $gray-600;
   @include pad{
-    max-width: 100%;
+    width: 100%;
+    height: 3rem;
   }
 }
 .banner-dropdown-button{
   width: 2.75rem;
   height: 2.75rem;
   color: #fff;
-  background: $primary;
+  background: $info;
   border-radius: 50%;
   text-align: center;
   right: 0;

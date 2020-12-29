@@ -4265,6 +4265,18 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.btn:hover {
+  background: #772400;
+}
+
+.btn-weight-md {
+  width: 10rem;
+}
+
+.btn-weight-lg {
+  width: 15.9375rem;
+}
+
 .fade {
   -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
@@ -8254,6 +8266,7 @@ a.close.disabled {
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
   right: -50%;
+  top: 50%;
 }
 
 .carousel-indicators {
@@ -10010,8 +10023,8 @@ button.bg-gray-900:focus {
 }
 
 .shadow-sm {
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-box-shadow: 0px 3px 6px #00000029 !important;
+          box-shadow: 0px 3px 6px #00000029 !important;
 }
 
 .shadow {
@@ -16824,18 +16837,6 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   }
 }
 
-.btn:hover {
-  background: #772400;
-}
-
-.btn-weight-md {
-  width: 10rem;
-}
-
-.btn-weight-lg {
-  width: 15.9375rem;
-}
-
 .logo {
   width: 121px;
   height: 55px;
@@ -16856,6 +16857,12 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   }
 }
 
+@media all and (max-width: 767px) {
+  .index-search {
+    height: auto;
+  }
+}
+
 @media all and (max-width: 992px) {
   .index-banner {
     max-width: 13.125rem;
@@ -16863,34 +16870,41 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   }
 }
 
+@media all and (max-width: 767px) {
+  .index-banner {
+    max-width: 100%;
+  }
+}
+
+.index-banner-form {
+  width: 100%;
+}
+
 @media all and (max-width: 992px) {
-  .index-banner-md {
+  .index-banner-form {
     width: 390px;
   }
 }
 
 .variety {
-  max-width: 7.5rem;
-  width: 100%;
+  width: 18.89%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .service, .dist {
-  max-width: 13.125rem;
-  width: 100%;
+  width: 33.07%;
 }
 
 .search-button {
-  max-width: 5.9375rem;
-  width: 100%;
+  width: 14.96%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 @media all and (max-width: 992px) {
   .search-button {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -16901,7 +16915,8 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
 @media all and (max-width: 992px) {
   .variety, .service, .dist {
-    max-width: 100%;
+    width: 100%;
+    height: 3rem;
   }
 }
 
@@ -16909,7 +16924,7 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   width: 2.75rem;
   height: 2.75rem;
   color: #fff;
-  background: #772400;
+  background: #D54100;
   border-radius: 50%;
   text-align: center;
   right: 0;
@@ -17258,6 +17273,15 @@ a.text-gray-900:hover, a.text-gray-900:focus {
 
 .login .socialMedia-link {
   width: 49.29%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (max-width: 992px) {
@@ -17274,6 +17298,22 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   .login button[type="submit"] {
     width: 100%;
   }
+}
+
+.login .facebook:before {
+  content: "";
+  display: inline-block;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/facebook.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.login .google:before {
+  content: "";
+  display: inline-block;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/google.svg");
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .member {
@@ -17320,11 +17360,6 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   .member-link {
     width: 100%;
   }
-}
-
-.card {
-  -webkit-box-shadow: 0px 3px 6px #00000029;
-          box-shadow: 0px 3px 6px #00000029;
 }
 
 .big-img {
