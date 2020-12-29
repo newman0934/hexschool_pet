@@ -16845,6 +16845,30 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   white-space: nowrap;
 }
 
+.index-search {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-1.png") no-repeat;
+}
+
+@media all and (max-width: 992px) {
+  .index-search {
+    background: none;
+    height: calc(100vh - 70px);
+  }
+}
+
+@media all and (max-width: 992px) {
+  .index-banner {
+    max-width: 13.125rem;
+    visibility: visible !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .index-banner-md {
+    width: 390px;
+  }
+}
+
 .variety {
   max-width: 7.5rem;
   width: 100%;
@@ -16864,9 +16888,21 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   border-bottom-left-radius: 0;
 }
 
+@media all and (max-width: 992px) {
+  .search-button {
+    max-width: 100%;
+  }
+}
+
 .variety, .service, .dist {
   border-color: #ced4da;
   color: #6c757d;
+}
+
+@media all and (max-width: 992px) {
+  .variety, .service, .dist {
+    max-width: 100%;
+  }
 }
 
 .banner-dropdown-button {
@@ -16876,8 +16912,8 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   background: #772400;
   border-radius: 50%;
   text-align: center;
-  top: 11.875rem;
-  left: 36.875rem;
+  right: 0;
+  bottom: 3rem;
 }
 
 .banner-dropdown-button span {

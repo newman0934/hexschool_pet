@@ -1,3 +1,24 @@
+.index-search{
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-1.png") no-repeat;
+  @include pad{
+    background: none;
+    height: calc(100vh - 70px);
+  }
+}
+
+.index-banner{
+  @include pad{
+    max-width: 13.125rem;
+    @include invisible(visible);
+  }
+}
+
+.index-banner-md{
+  @include pad{
+    width:390px;
+  }
+}
+
 .variety{
   max-width: 7.5rem;
   width: 100%;
@@ -13,10 +34,16 @@
   width: 100%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  @include pad{
+    max-width: 100%;
+  }
 }
 .variety, .service, .dist{
   border-color: $gray-400;
   color: $gray-600;
+  @include pad{
+    max-width: 100%;
+  }
 }
 .banner-dropdown-button{
   width: 2.75rem;
@@ -25,8 +52,8 @@
   background: $primary;
   border-radius: 50%;
   text-align: center;
-  top: 11.875rem;
-  left:36.875rem;
+  right: 0;
+  bottom: 3rem;
 }
 .banner-dropdown-button span{
   font-size: 2.5rem;
