@@ -54,7 +54,69 @@
 				</div>
 				<div class="button-group">
 					<a href="#" class="btn btn-outline-info btn-weight-md mr-lg-8">聯繫</a>
-					<a href="#" class="btn btn-info btn-weight-lg">立刻預約</a>
+					<button class="btn btn-info btn-weight-lg" data-toggle="modal" data-target="#reserve-step1">立刻預約</button>
+					<div class="modal fade" id="reserve-step1" tabindex="-1" role="dialog" aria-labelledby="reserve-step1" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+						  <div class="modal-content">
+							<div class="modal-body">
+							  <div class="container-fluid">
+								  <div class="row">
+									  <div class="col-md-8">
+										  <h2>預約項目</h2>
+										  <ul class="d-flex">
+											  <li><a href="#">1</a></li>
+											  <li><a href="#">2</a></li>
+											  <li><a href="#">3</a></li>
+											  <li><a href="#">4</a></li>
+										  </ul>
+										  <form>
+											<div class="form-row">
+											  <div class="col-5 mb-3">
+												<label for="validationCustom01">選擇日期</label>
+												<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+											  </div>
+											  <p class="col-1 mb-3 align-self-end">至</p>
+												  <input type="text" class="form-control col-3 mb-3 align-self-end">
+											  <p class="col-3 mb-3 align-self-end">共一晚</p>
+											</div>
+											<div class="form-row">
+											  <div class="col-md-6 mb-3">
+												<label for="validationCustom03">毛孩數量</label>
+												<input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+											  </div>
+											  <div class="col-md-3 mb-3">
+												<label for="validationCustom04">您的毛孩是</label>
+												<input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+											  </div>
+											  <div class="col-md-3 mb-3">
+												<label for="validationCustom05">年齡</label>
+												<input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+											  </div>
+											</div>
+										  </form>
+										  <ul class="row">
+											  <li class="col-md-4 text-center">預約項目</li>
+											  <li class="col-md-4 text-center">預約資料</li>
+											  <li class="col-md-4 text-center">付款資訊</li>
+										  </ul>
+									  </div>
+									  <div class="col-md-4">
+										  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-3.jpeg" alt="modal img">
+										  <h2>毛孩好家 <span class="material-icons text-secondary">star</span><span class="material-icons text-secondary">star</span><span class="material-icons text-secondary">star</span><span class="material-icons text-secondary">star</span><span class="material-icons text-secondary">star</span></h2>
+										  <div class="media mb-md-7 mb-lg-16">
+											<span class="mr-3 material-icons">place</span>
+											<div class="media-body">
+												<p class="mt-0">高雄市苓雅區、新興區、前鎮區</p>
+											</div>
+										</div>
+										  <button class="btn btn-info w-100">下一步</button>
+									  </div>
+								  </div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
 				</div>			
 			</div>
 			<div class="col-md-5 col-lg-6">
@@ -330,5 +392,15 @@
 		<h5 class="d-md-flex d-none text-primary mb-md-7"><span class="material-icons">phone</span><a href="tel:071234567">07-123-4567</a></h5>
 		<p class="text-primary">Copyright © 2020 PetPet. All rights reserved.</p>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+
 </body>
 </html>
