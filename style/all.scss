@@ -1,6 +1,10 @@
 @import "./bootstrap/bootstrap";
 @import "./config/var";
 @import "./config/mixin";
+@import "./utilities/sizing";
+@import "./utilities/display";
+@import "./utilities/z-index";
+@import "./utilities/position";
 @import "./layout/header";
 @import "./page/index";
 @import "./page/service";

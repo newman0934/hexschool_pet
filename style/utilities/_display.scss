@@ -1,0 +1,11 @@
+.display-md-none{
+  @include pad{
+    display: none;
+  }
+}
+
+.display-sm-block{
+  @include mobile{
+    display: block;
+  }
+}

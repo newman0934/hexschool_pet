@@ -1,0 +1,5 @@
+.width-mobile-100{
+  @include mobile{
+    width: 100% !important;
+  }
+}

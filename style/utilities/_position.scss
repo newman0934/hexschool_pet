@@ -1,0 +1,5 @@
+.position-md-relative{
+  @include pad{
+    position: relative !important;
+  }
+}

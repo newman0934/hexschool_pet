@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -16837,6 +16838,34 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   }
 }
 
+@media all and (max-width: 767px) {
+  .width-mobile-100 {
+    width: 100% !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .display-md-none {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .display-sm-block {
+    display: block;
+  }
+}
+
+.z-index-1 {
+  z-index: 2;
+}
+
+@media all and (max-width: 992px) {
+  .position-md-relative {
+    position: relative !important;
+  }
+}
+
 .logo {
   width: 121px;
   height: 55px;
@@ -17249,10 +17278,103 @@ a.text-gray-900:hover, a.text-gray-900:focus {
   color: #887676;
 }
 
+.small-img {
+  cursor: pointer;
+}
+
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+@media all and (max-width: 992px) {
+  .modal .modal-dialog {
+    max-width: 690px;
+  }
+}
+
+.modal h2 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+.modal h3 {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.modal .appointment-item {
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.modal .appointment-item:hover {
+  border-color: #D54100;
+  color: #772400;
+}
+
+.modal .appointment-item:hover .material-icons {
+  color: #F0AD25;
+}
+
+.modal img {
+  height: 265px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media all and (max-width: 992px) {
+  .modal img {
+    height: 188px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .modal img {
+    height: 88px;
+  }
+}
+
+.modal .appointment-process {
+  position: relative;
+  border-top: 2px solid #D54100;
+}
+
+.modal .appointment-process li:before {
+  content: "●";
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  color: #D54100;
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
+}
+
+.modal button {
+  width: 100%;
+}
+
+@media all and (max-width: 992px) {
+  .modal button {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .modal button {
+    width: 100%;
+  }
+}
+
+.modal .pets-icon {
+  font-size: 5rem;
+}
+
+@media all and (max-width: 992px) {
+  .btn-weight-lg {
+    width: 10rem;
+  }
 }
 
 .login {
